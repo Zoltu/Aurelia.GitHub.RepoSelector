@@ -17,6 +17,7 @@
     "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-babel": "^5.1.0",
+    "gulp-json-editor": "^2.2.1",
     "jspm": "^0.15.3",
     "object.assign": "^2.0.1",
     "require-dir": "^0.3.0",

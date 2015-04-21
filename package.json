@@ -1,0 +1,38 @@
+{
+	"name": "zoltu-github-reposelector",
+	"version": "0.1.0",
+	"description": "An Aurelia component for selecting a GitHub repository.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Zoltu/GitHub.RepoSelector.git"
+	},
+	"author": "Zoltu",
+	"license": "CC0-1.0",
+	"bugs": {
+		"url": "https://github.com/Zoltu/GitHub.RepoSelector/issues"
+	},
+	"homepage": "https://github.com/Zoltu/GitHub.RepoSelector",
+	"jspm": {
+		"main": "index",
+		"format": "register",
+		"directories": {
+			"lib": "."
+		},
+		"dependencies": {
+			"aurelia-framework": "github:aurelia/framework@^0.10.0"
+		},
+		"devDependencies": {
+			"del": "jspm:del@^1.1.1",
+			"gulp": "jspm:gulp@^3.8.11",
+			"gulp-babel": "jspm:gulp-babel@^5.1.0",
+			"gulp-json-editor": "jspm:gulp-json-editor@^2.2.1",
+			"jspm": "jspm:jspm@^0.15.3",
+			"object.assign": "jspm:object.assign@^2.0.1",
+			"require-dir": "jspm:require-dir@^0.3.0",
+			"run-sequence": "jspm:run-sequence@^1.0.2",
+			"traceur": "github:jmcriffey/bower-traceur@0.0.87",
+			"traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.87",
+			"vinyl-paths": "jspm:vinyl-paths@^1.0.0"
+		}
+	}
+}

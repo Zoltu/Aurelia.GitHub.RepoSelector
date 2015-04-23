@@ -29,6 +29,9 @@
     "format": "register",
     "directories": {
       "lib": "output/system"
+    },
+    "dependencies": {
+      "aurelia-framework": "github:aurelia/framework@^0.10.0"
     }
   }
 }

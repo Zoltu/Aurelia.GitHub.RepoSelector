@@ -6,6 +6,7 @@ gulp.task('jspm-prepare-release', ['build'], function() {
 		delete json.devDependencies;
 		delete json.dependencies;
 		delete json.main;
+		delete json.jspm.devDependencies;
 		json.jspm.directories.lib = ".";
 		return json;
 	};
@@ -15,5 +16,5 @@ gulp.task('jspm-prepare-release', ['build'], function() {
 	};
 	gulp.src('./package.json')
 		.pipe(jsonEditor(mutatePackagesJson, jsonOptions))
-		.pipe(gulp.dest('./output/system'));
+		.pipe(gulp.dest('./output'));
 });

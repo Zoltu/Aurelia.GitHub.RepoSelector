@@ -28,4 +28,5 @@ node_modules
 /jspm_packages/
 /.config
 /output/
+/output-sample/
 /config.js

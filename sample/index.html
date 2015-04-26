@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<title>RepoCreator</title>
+</head>
+<body aurelia-app="output-sample/main">
+	<script src="../jspm_packages/system.js"></script>
+	<script src="../config.js"></script>
+	<script>
+		System.config({
+			"baseURL": "../",
+			"paths": {
+				"*": "*.js",
+				"github:*": "jspm_packages/github/*.js",
+				"npm:*": "jspm_packages/npm/*.js"
+			}
+		});
+	</script>
+	<script>
+		System.import('aurelia-bootstrapper');
+	</script>
+</body>
+</html>

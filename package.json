@@ -1,6 +1,6 @@
 {
   "name": "zoltu-github-reposelector",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "An Aurelia component for selecting a GitHub repository.",
   "main": "output/commonjs/index.js",
   "repository": {

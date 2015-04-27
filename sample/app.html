@@ -2,7 +2,10 @@
 	<div hidden.bind="!chosenRepo">
 		You chose: ${chosenRepo.name}
 	</div>
+	<div hidden.bind="!errorHttpResponseMessage">
+		Status Code: ${errorHttpResponseMessage.statusCode} Message: ${errorHttpResponseMessage.content.message}
+	</div>
 	<div style="padding:15px">
-		<zoltu-github-reposelector selection-callback.call="repoSelected()" git-hub-auth-token="75e14e5484e6f9f652662ea955b590eda73d9333"></zoltu-github-reposelector>
+		<zoltu-github-reposelector selection-callback.call="repoSelected()" query-failure-callback.call="queryFailure()" git-hub-auth-token="75e14e5484e6f9f652662ea955b590eda73d9333"></zoltu-github-reposelector>
 	</div>
 </template>

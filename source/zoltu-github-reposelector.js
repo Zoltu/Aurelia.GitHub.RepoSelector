@@ -10,6 +10,7 @@ import './zoltu-github-reposelector.css!';
 export class ZoltuGithubRepoSelector {
 	@bindable gitHubAuthToken;
 	@bindable selectionCallback;
+	@bindable queryFailureCallback;
 
 	constructor(httpClient) {
 		this.httpClient = httpClient;
@@ -42,6 +43,9 @@ export class ZoltuGithubRepoSelector {
 		this.httpClient.get(`https://api.github.com/search/repositories?q=${this.constructQuery()}`).then((httpResponseMessage) =>
 		{
 			this.repositories = httpResponseMessage.content.items;
+		}, (httpResponseMessage) =>
+		{
+			this.queryFailureCallback(httpResponseMessage);
 		});
 	}
 

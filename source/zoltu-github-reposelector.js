@@ -8,10 +8,6 @@ import './zoltu-github-reposelector.css!';
 @useView('./zoltu-github-reposelector.html')
 @inject(HttpClient)
 export class ZoltuGithubRepoSelector {
-	@bindable gitHubAuthToken;
-	@bindable selectionCallback;
-	@bindable queryFailureCallback;
-
 	constructor(httpClient) {
 		this.httpClient = httpClient;
 	}
@@ -19,6 +15,10 @@ export class ZoltuGithubRepoSelector {
 	bind(bindingContext) {
 		this.httpClient.configure(x => x.withHeader('Authorization', `token ${this.gitHubAuthToken}`))
 	}
+
+	@bindable gitHubAuthToken;
+	@bindable selectionCallback;
+	@bindable queryFailureCallback;
 
 	inputUser = '';
 	inputRepo = '';

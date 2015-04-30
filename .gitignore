@@ -30,3 +30,4 @@ node_modules
 /output/
 /output-sample/
 /config.js
+/.idea/

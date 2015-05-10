@@ -13,7 +13,7 @@ export class ZoltuGithubRepoSelector {
 	}
 
 	bind(bindingContext) {
-		this.httpClient.configure(x => x.withHeader('Authorization', `token ${this.gitHubAuthToken}`))
+		this.httpClient.configure(x => x.withHeader('Authorization', `token ${this.gitHubAuthToken}`));
 	}
 
 	@bindable gitHubAuthToken;

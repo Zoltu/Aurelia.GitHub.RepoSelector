@@ -1,0 +1,28 @@
+{
+	"name": "zoltu-github-reposelector",
+	"version": "0.1.8",
+	"description": "An Aurelia component for selecting a GitHub repository.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Zoltu/GitHub.RepoSelector.git"
+	},
+	"author": "Zoltu",
+	"license": "CC0-1.0",
+	"bugs": {
+		"url": "https://github.com/Zoltu/GitHub.RepoSelector/issues"
+	},
+	"homepage": "https://github.com/Zoltu/GitHub.RepoSelector",
+	"jspm": {
+		"main": "index",
+		"format": "register",
+		"directories": {
+			"lib": "."
+		},
+		"dependencies": {
+			"aurelia-framework": "github:aurelia/framework@^0.11.0",
+			"aurelia-http-client": "github:aurelia/http-client@^0.8.1",
+			"bootstrap": "github:twbs/bootstrap@^3.3.4",
+			"css": "github:systemjs/plugin-css@^0.1.10"
+		}
+	}
+}

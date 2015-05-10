@@ -17,8 +17,8 @@ export class ZoltuGithubRepoSelector {
 	}
 
 	@bindable gitHubAuthToken;
-	@bindable selectionCallback;
-	@bindable queryFailureCallback;
+	@bindable selectionCallback: (repo: Repository) => void;
+	@bindable queryFailureCallback: (response: HttpResponseMessage) => void;
 
 	inputUser = '';
 	inputRepo = '';

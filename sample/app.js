@@ -1,9 +1,9 @@
 export class App {
-	repoSelected(repo) {
+	repoSelected = (repo) => {
 		this.chosenRepo = repo;
 	}
 
-	queryFailure(httpResponseMessage) {
+	queryFailure = (httpResponseMessage) => {
 		this.errorHttpResponseMessage = httpResponseMessage;
 		console.log(httpResponseMessage)
 	}

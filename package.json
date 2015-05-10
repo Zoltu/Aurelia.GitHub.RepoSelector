@@ -1,6 +1,6 @@
 {
   "name": "zoltu-github-reposelector",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "An Aurelia component for selecting a GitHub repository.",
   "main": "output/commonjs/index.js",
   "repository": {
@@ -33,13 +33,13 @@
       "lib": "output/system"
     },
     "dependencies": {
-      "aurelia-framework": "github:aurelia/framework@^0.10.0",
-      "aurelia-http-client": "github:aurelia/http-client@^0.7.0",
-      "bootstrap": "github:twbs/bootstrap@^3.3.4"
+      "aurelia-framework": "github:aurelia/framework@^0.11.0",
+      "aurelia-http-client": "github:aurelia/http-client@^0.8.1",
+      "bootstrap": "github:twbs/bootstrap@^3.3.4",
+      "css": "github:systemjs/plugin-css@^0.1.10"
     },
     "devDependencies": {
-      "aurelia-bootstrapper": "github:aurelia/bootstrapper@^0.11.0",
-      "css": "github:systemjs/plugin-css@^0.1.10",
+      "aurelia-bootstrapper": "github:aurelia/bootstrapper@^0.12.0",
       "traceur": "github:jmcriffey/bower-traceur@0.0.88",
       "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88"
     }
